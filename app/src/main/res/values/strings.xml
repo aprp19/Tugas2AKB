@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Tugas2AKB</string>
+
+    //Main
+    <string name="main_logo">Desc</string>
+    <string name="main_edtText_nama">Username</string>
+    <string name="main_edtText_hintnama">Username</string>
+    <string name="main_edtText_kode">Password</string>
+    <string name="main_btn_login">LOGIN</string>
+    <string name="main_btn_facebook">CONNECT WITH FACEBOOK</string>
+    <string name="main_viewText">OR</string>
+    <string name="main_btn_register">doesn\'t have account ? <b>Register</b></string>
+
+    //Register
+    <string name="r_header">header</string>
+    <string name="r_btn_back">Back</string>
+    <string name="r_edtText_nama">Username</string>
+    <string name="r_edtText_email">Email</string>
+    <string name="r_edtText_phone">Phone Number</string>
+    <string name="r_rdo1_Male">Male</string>
+    <string name="r_rdo2_Female">Female</string>
+    <string name="r_rdo1_Personal">Personal</string>
+    <string name="r_rdo2_Organization">Organization</string>
+    <string-array name="r_blood">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="r_rehus">
+        <item>Rehus</item>
+    </string-array>
+    <string name="r_edtText_Pass">Password</string>
+    <string name="r_edtText_RePass">Retype Password</string>
+    <string-array name="r_job">
+        <item>Job</item>
+        <item>PNS</item>
+        <item>TNI</item>
+        <item>POLISI</item>
+        <item>GURU</item>
+        <item>FREELANCE</item>
+    </string-array>
+    <string name="r_edtText_Add">Home Address</string>
+    <string name="r_edtText_Loc">Default Location</string>
+    <string name="r_img_maps">Location</string>
+    <string name="r_cb">Agree with Terms and Conditions</string>
+    <string name="r_btn_register">Register</string>
+
+    //Verify1
+    <string name="v1_txt_almost">Almost There</string>
+    <string name="v1_txt_thank">
+        Thank you for registering with us.One more \n
+        step, you need to check your email \n
+        to active your account
+    </string>
+    <string name="v1_btn_verify">Verify</string>
+
+    //Verify2
+    <string name="v2_txt_verify">Verify your Account</string>
+    <string name="v2_txt_send">We have send verification code to your email</string>
+    <string name="v2_edtTxt_code">enter verification code here…</string>
+    <string name="v2_btn_send">Send</string>
+    <string name="v2_btn_resend">doesn\'t get the code ? <b>Resend</b></string>
+
+    //Home
+    <string name="h_get_nama">Angga Puja Restu Prakasa</string>
+    <string name="h_txt_blood">Blood Type : </string>
+    <string name="h_get_blood">Blood</string>
+</resources>

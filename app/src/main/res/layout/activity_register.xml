@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/r_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_header"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/r_header" />
+
+    <ImageButton
+        android:id="@+id/r_btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_header_back"
+        app:layout_constraintBottom_toBottomOf="@+id/r_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/r_header"
+        app:layout_constraintTop_toTopOf="@+id/r_header"
+        app:layout_constraintVertical_bias="0.5"
+        android:contentDescription="@string/r_btn_back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@+id/r_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/r_edtText_nama"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="@string/r_edtText_nama"
+        android:ems="10"
+        android:hint="@string/r_edtText_nama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_header" />
+
+    <EditText
+        android:id="@+id/r_edtText_email"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/r_edtText_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="@string/r_edtText_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_nama" />
+
+    <EditText
+        android:id="@+id/r_edtText_phone"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:autofillHints="@string/r_edtText_phone"
+        android:hint="@string/r_edtText_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_email" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_phone">
+
+        <RadioButton
+            android:id="@+id/r_rdo_Male"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="@string/r_rdo1_Male"
+            android:textColor="@color/colorGreyText"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/r_rdo_Female"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/r_rdo2_Female"
+            android:textColor="@color/colorGreyText"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/r_blood"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:entries="@array/r_blood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Spinner
+        android:id="@+id/r_rehus"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:entries="@array/r_rehus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/r_edtText_Pass"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:autofillHints="@string/r_edtText_Pass"
+        android:inputType="textCapCharacters"
+        android:hint="@string/r_edtText_Pass"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_blood" />
+    <EditText
+        android:id="@+id/r_edtText_RePass"
+        android:autofillHints="@string/r_edtText_RePass"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:hint="@string/r_edtText_RePass"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_Pass" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_RePass">
+
+        <RadioButton
+            android:id="@+id/r_rdo_Personal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="@string/r_rdo1_Personal"
+            android:textColor="@color/colorGreyText"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/r_rdo_Organization"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/r_rdo2_Organization"
+            android:textColor="@color/colorGreyText"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/r_Job"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:entries="@array/r_job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <EditText
+        android:id="@+id/r_edtText_Add"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:autofillHints="@string/r_edtText_Add"
+        android:ems="10"
+        android:hint="@string/r_edtText_Add"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_Job" />
+
+    <EditText
+        android:id="@+id/r_edtText_Loc"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:autofillHints="@string/r_edtText_Loc"
+        android:ems="10"
+        android:hint="@string/r_edtText_Loc"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_Add" />
+
+    <ImageView
+        android:id="@+id/r_img_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/r_img_maps"
+        app:layout_constraintBottom_toBottomOf="@+id/r_edtText_Loc"
+        app:layout_constraintEnd_toEndOf="@+id/r_edtText_Loc"
+        app:layout_constraintTop_toTopOf="@+id/r_edtText_Loc"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_blood_needed_location" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/r_cb"
+        android:textColor="@color/colorGreyText"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_edtText_Loc" />
+
+    <Button
+        android:id="@+id/r_btn_register"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/r_btn_color"
+        android:text="@string/r_btn_register"
+        android:textColor="@color/colorLightBlue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
