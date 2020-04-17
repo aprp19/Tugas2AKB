@@ -67,4 +67,19 @@
     <string name="h_get_nama">Angga Puja Restu Prakasa</string>
     <string name="h_txt_blood">Blood Type : </string>
     <string name="h_get_blood">Blood</string>
+    <string name="Desc">Desc</string>
+    <string name="h_75">75</string>
+    <string name="h_100">100</string>
+    <string name="h_330">330</string>
+    <string name="h_bloodgive">BLOOD GIVE</string>
+    <string name="h_bloodreceived">BLOOD RECEIVED</string>
+    <string name="h_thanks">THANKS</string>
+    <string name="h_search">Search donor near you</string>
+    <string name="h_donor">Search Donor</string>
+    <string name="h_bneed">Blood Needed</string>
+    <string name="h_4need">4 Users need blood</string>
+    <string name="h_message">Message</string>
+    <string name="h_nmessage">5 New Messages</string>
+    <string name="h_dhistory">Donor History</string>
+    <string name="h_giverece">5 Gives, 2 Received</string>
 </resources>

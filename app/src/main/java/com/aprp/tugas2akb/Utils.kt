@@ -24,7 +24,10 @@ object Utils {
         editor.apply()
     }
 
-    fun getSharedPref(key: String) : String{
+    fun getStringSharedPref(key: String) : String{
         return sharedPreferences!!.getString(key,"")!!
+    }
+    fun getIntSharedPref(key: String) : Int{
+        return sharedPreferences!!.getInt(key,0)
     }
 }
