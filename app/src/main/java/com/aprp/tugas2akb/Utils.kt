@@ -1,3 +1,11 @@
+/*
+NAMA    : ANGGA PUJA RESTU PRAKASA
+NIM     : 10117130
+KELAS   : IF4
+
+TANGGAL PENGERJAAN : 16 - APRIL - 2020
+ */
+
 package com.aprp.tugas2akb
 
 import android.app.Activity
